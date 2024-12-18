@@ -1,0 +1,144 @@
+/* Сброс базовых отступов и параметры для всего документа */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Отключаем полосы прокрутки */
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Блок 1 */
+.block1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* Білий колір */
+    font-family: Arial, Helvetica, sans-serif; /* Стандартний шрифт */
+}
+
+
+/* Блок 2 */
+.block2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Блок 3 */
+.block3 {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 40%;
+    height: 70%;
+    background-color: rgba(60, 179, 113, 0.7);
+}
+
+
+.block4 {
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+    width: 50%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif; 
+}
+.block4 p {
+    margin: 0;
+    font-weight: 700; /* Жирний текст */
+}
+.textblock {
+    position: absolute;
+    bottom: 80%;
+    right: 60%;
+    width: 19%;
+    height: 10%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(60, 60, 60);
+    line-height: 1.5; 
+    text-align: justify;
+
+}
+@media screen and (max-width: 896px) 
+{
+    .textblock {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 10%;
+        font-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(60, 60, 60);
+        line-height: 1.5; 
+        text-align: left;
+    }
+    .block2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 50%;
+        background-color: rgb(255, 213, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .block3 {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        width: 80%;
+        height: 40%;
+
+    }
+    .block4 {
+        position: absolute;
+        bottom: 25%;
+        right: 30%;
+        width: 100%;
+        height: 15%;
+        background-color: rgb(255, 255, 255);
+        font-size: 170%;
+        display: flex;  
+
+        font-family: 'Roboto Slab', serif; 
+    }
+    .block5 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 111%;
+        height: 13%;
+        background-color: rgb(36, 36, 36);
+        font-size: 60%;
+        display: flex;  
+        color: rgb(213, 213, 213);
+        font-family: 'Roboto Slab', serif; 
+        justify-content: center;
+        align-items: center;
+    }
+}
+
